@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    /* display: flex;    */
+    height: 100vh;
+    overflow: hidden;
+}
+.heading h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 21px;
+    display: flex;
+    color: rgb(204, 204, 204);
+    letter-spacing: 4px;
+    margin: 15px;
+    justify-content: center;
+}
+#images{
+    transition: all 70ms ease-in-out;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    position: relative;
+    height: 80vh;
+    flex: 0.5;
+    background-size: cover;
+    /* border-radius: 30px; */
+    margin: 3px;
+    transition: all 700ms ease-in;
+}
+
+.panel h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    position: absolute;
+    bottom: 20px;
+    opacity: 0;
+}
+.panel.active h3{
+    margin: 5px;
+    color: aliceblue;
+    opacity: 1;
+    transition: opacity 300ms ease-in 400ms;
+}
+
+.panel.active h3{
+    opacity: 1;
+}
+
+#panel-1{
+    background-image: url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");   
+}
+
+#panel-2{
+    background-image: url("https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");   
+}
+
+#panel-3{
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80");
+   
+}
+
+#panel-4{
+    background-image: url("https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");   
+}
+
+#panel-5{
+    background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");   
+}
+.active{
+    flex: 7;
+    border-radius: 0%;
+}
+
